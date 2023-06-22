@@ -1,7 +1,7 @@
 import 'package:custom_video/customPlayer/controller/custome_video_controller.dart';
+import 'package:custom_video/customPlayer/widgets/player.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:video_player/video_player.dart';
 
 class CustomPlayer extends StatelessWidget {
   CustomPlayer({Key? key}) : super(key: key);
@@ -14,7 +14,7 @@ class CustomPlayer extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: controller.customPlayer(),
+        child: PotraitPlayer(),
       ),
     );
   }
